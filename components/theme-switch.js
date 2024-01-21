@@ -6,8 +6,8 @@ import { useHasMounted } from '@lib/helpers'
 import Swatch from '@components/swatch'
 
 const themes = [
-  { title: 'Light Mode', name: 'light', color: { hex: '#f4f4f0' } },
   { title: 'Dark Mode', name: 'dark', color: { hex: '#000000' } },
+  { title: 'Light Mode', name: 'light', color: { hex: '#f4f4f0' } },
   { title: 'Metal Mode', name: 'metal', color: { hex: '#FB1B15' } },
 ]
 
