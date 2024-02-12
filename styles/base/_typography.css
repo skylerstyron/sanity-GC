@@ -203,8 +203,8 @@ figure {
   }
 }
 
-hr {
+/* hr {
   &:last-child {
     @apply mb-0;
   }
-}
+} */
