@@ -109,7 +109,7 @@ const MyApp = ({ Component, pageProps, router }) => {
   const { data } = pageProps
 
   return (
-    <ThemeProvider enableSystem={false} disableTransitionOnChange>
+    <ThemeProvider enableSystem={false} defaultTheme="dark" disableTransitionOnChange>
       <SiteContextProvider data={{ ...data?.site }}>
         <Site Component={Component} pageProps={pageProps} router={router} />
       </SiteContextProvider>

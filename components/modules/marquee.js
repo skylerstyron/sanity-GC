@@ -16,7 +16,7 @@ const Marquee = ({ data = {} }) => {
   })
 
   return (
-    <div ref={observe} className="marquee-section">
+    <div ref={observe} className="marquee-section ">
       <Marqy
         speed={speed}
         direction={reverse ? 'right' : 'left'}
@@ -28,7 +28,7 @@ const Marquee = ({ data = {} }) => {
             switch (item._type) {
               case 'simple':
                 return (
-                  <span key={key} className="marquee--text">
+                  <span key={key} className="marquee--text is-h3">
                     {item.text}
                   </span>
                 )
