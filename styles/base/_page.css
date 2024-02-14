@@ -1,4 +1,5 @@
 html {
+
   &.is-loading,
   &.is-loading * {
     @apply cursor-wait !important;
@@ -15,4 +16,20 @@ body {
   &--content {
     @apply mx-auto;
   }
+}
+
+.Contact .section {
+  @apply border-none;
+}
+
+.Contact~.footer {
+  border-top: solid 1px var(--pageText);
+}
+
+.Error .section {
+  @apply border-none;
+}
+
+.Error~.footer {
+  border-top: solid 1px var(--pageText)
 }

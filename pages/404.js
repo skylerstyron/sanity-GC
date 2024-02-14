@@ -22,9 +22,7 @@ const NotFoundPage = ({ data }) => {
     <Layout
       site={site}
       menus={menus}
-      page={{
-        seo: page.seo,
-      }}
+      page={page}
     >
       {page.modules?.map((module, key) => (
         <Module key={key} index={key} data={module} />
@@ -38,6 +36,7 @@ export async function getStaticProps({ preview, previewData }) {
     `
     *[_type == "page" && _id == ${queries.errorID}] | order(_updatedAt desc)[0]{
       "id": _id,
+      
       hasTransparentHeader,
       modules[]{
         defined(_ref) => { ...@->content[0] {
