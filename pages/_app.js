@@ -20,16 +20,12 @@ import Cart from '@components/cart'
 // Console Credits
 if (isBrowser) {
   console.groupCollapsed(
-    '%c💀 Site Credits',
+    '%c💀 Gnar Crew',
     'display:block;padding:0.125em 1em;font-family:courier;font-size:14px;font-weight:bold;line-height:2;text-transform:uppercase;background:black;color:white;'
   )
   console.log(
-    '%cDesign by Nick DiMatteo \n– https://nickdimatteo.com',
-    'display:block;font-family:courier;font-size:12px;font-weight:bold;line-height:1;color:black;'
-  )
-  console.log(
-    '%cDevelopment by Nick DiMatteo \n– https://nickdimatteo.com',
-    'display:block;font-family:courier;font-size:12px;font-weight:bold;line-height:1;color:black;'
+    '%cContact us \n– hello@gnarcrew.com',
+    'display:block;padding:0.125em 1em;font-family:courier;font-size:12px;font-weight:bold;line-height:1;background:black;color:white;'
   )
   console.groupEnd()
 }
