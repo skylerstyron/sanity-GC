@@ -90,6 +90,7 @@ const Site = ({ Component, pageProps, router }) => {
         mode="wait"
         onExitComplete={() => {
           document.body.classList.remove('overflow-hidden')
+          console.log("Animation")
         }}
       >
         <Component key={pageID} {...pageProps} />

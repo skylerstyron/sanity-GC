@@ -42,6 +42,7 @@
     font-family: "obviously-narrow", sans-serif;
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
   }
 
   h3,
@@ -50,11 +51,13 @@
     font-family: obviously-narrow, sans-serif;
     font-weight: 600;
     font-style: italic;
+    font-display: swap;
   }
 
   h4,
   .is-h4 {
     @apply m-0 text-24 font-normal leading-135;
+    
   }
 
   h5 {

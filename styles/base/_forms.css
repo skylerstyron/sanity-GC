@@ -26,7 +26,7 @@
       @apply sm:flex;
 
       .control {
-        @apply sm:flex-1 m-0 border rounded-full bg-pageBG;
+        @apply sm:flex-1 m-0 rounded-full ;
       }
 
       .btn {
@@ -40,15 +40,12 @@
 
     &.is-clean {
       @apply sm:items-center sm:border-b mb-16;
+      /* padding-bottom: 10px; */
 
       .control {
-        @apply sm:border-0;
+        /* border: solid 1px var(--pageText); */
         
-        &--label,
-        input {
-          @apply sm:px-0;
-        }
-
+       
         &--error {
           @apply sm:left-0 sm:transform-none;
         }

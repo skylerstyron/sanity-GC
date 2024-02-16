@@ -79,12 +79,13 @@ const Photo = ({
             onLoad={handleLoad}
             alt={photo.alt || photo.asset?.altText}
             className={cx(getSize(layout), { 'is-loaded': isLoaded })}
+            loading="lazy"
           />
         </picture>
 
         {hasPlaceholder && (
           <div className={cx('ar--placeholder', { 'is-loaded': isLoaded })}>
-            <img src={photo.lqip} alt="" role="presentation" />
+            <img src={photo.lqip} alt="" role="presentation" loading="lazy" />
           </div>
         )}
       </div>
