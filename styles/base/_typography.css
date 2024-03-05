@@ -1,5 +1,12 @@
 @tailwind base;
 
+@font-face {
+  font-family: 'Rune';
+  src: url('/fonts/Rune.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 @layer base {
   html {
@@ -57,7 +64,8 @@
   h4,
   .is-h4 {
     @apply m-0 text-24 font-normal leading-135;
-    
+    /* font-family: 'Rune', sans-serif; */
+
   }
 
   h5 {
@@ -144,7 +152,7 @@ ul {
 
       &::before {
         content: "+";
-        @apply inline-block relative -ml-4 w-4;
+        @apply inline-block relative mr-15 w-4;
       }
     }
   }
@@ -187,10 +195,24 @@ h3,
 
 h4,
 .is-h4 {
+  font-family: 'Rune', sans-serif !important;
+  /* font-style: italic; */
+  font-weight: 700;
+
   &:not(:last-child) {
     @apply mb-24;
+
   }
 }
+
+/* h5,
+.is-h5 {
+  &:not(:last-child) {
+    @apply mb-24;
+    font-family: 'Rune', sans-serif;
+    font-style: italic;
+  }
+} */
 
 a {
   .rc & {
@@ -217,3 +239,15 @@ figure {
     @apply mb-0;
   }
 } */
+
+
+
+/* Pages */
+
+/* Components */
+.hero h1,
+.hero h2 {
+  font-family: 'Rune', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}

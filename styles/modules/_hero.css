@@ -30,3 +30,7 @@
     padding-bottom: var(--headerHeight);
   }
 }
+
+.Shop > .hero, .About > .hero {
+  min-height: 20vh;
+}

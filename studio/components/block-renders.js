@@ -53,6 +53,19 @@ export const Header4 = props => (
   </h4>
 )
 
+export const Header5 = props => (
+  <h5
+    style={{
+      margin: '0',
+      fontSize: '1.25rem',
+      lineHeight: '1.25',
+      fontWeight: 400
+    }}
+  >
+    {props.children}
+  </h5>
+)
+
 export const Button = ({ isButton, styles, children }) => {
   if (!isButton) return children
 

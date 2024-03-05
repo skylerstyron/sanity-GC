@@ -67,6 +67,7 @@ a[href="#content"].skip-link {
 
 .logo {
   @apply flex flex-col relative z-1;
+  width: 150px;
 
   &--link {
     @apply clean-btn block p-8 bg-transparent;
@@ -75,6 +76,18 @@ a[href="#content"].skip-link {
       @apply block fill-current w-auto h-72;
     }
   }
+}
+
+.cls-1 {
+  fill: #e2a045;
+}
+
+.cls-1, .cls-2 {
+  stroke-width: 0px;
+}
+
+.cls-2 {
+  fill: #eae9e3;
 }
 
 .menu-toggle {

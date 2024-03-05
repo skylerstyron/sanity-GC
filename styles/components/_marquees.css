@@ -69,6 +69,7 @@
   
   &--item {
     @apply flex;
+    align-items: center;
   }
 
   &--text {

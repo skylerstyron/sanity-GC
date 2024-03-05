@@ -8,6 +8,7 @@
 
   --pageBG: #f4f4f0;
   --pageText: #000000;
+  --accent: #e4a244;
 
   --pageBG-hsl: 60, 14%, 95%;
   --pageText-hsl: 0, 0%, 0%;
@@ -16,8 +17,10 @@
 }
 
 [data-theme='dark'] {
-  --pageBG: #0E0E0E;
+  --pageBG: #191919;
   --pageText: #f4f4f0;
+
+  --accent: #e4a244;
 
   --pageBG-hsl: 0, 0%, 0%;
   --pageText-hsl: 60, 14%, 95%;
@@ -26,6 +29,8 @@
 [data-theme='metal'] {
   --pageBG: #000000;
   --pageText: #FB1B15;
+
+  --accent: #FB1B15;
 
   --pageBG-hsl: 0, 0%, 0%;
   --pageText-hsl: 2, 92%, 53%;

@@ -41,7 +41,10 @@
   }
 
   &--name {
-    @apply m-0 text-30 leading-135;
+    @apply m-0 text-50 leading-135;
+    font-family: 'Rune', sans-serif !important;
+    font-weight: 700;
+
   }
 
   &--title {

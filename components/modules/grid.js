@@ -6,7 +6,7 @@ import Freeform from '@components/freeform'
 import AccordionList from '@components/accordion-list'
 
 const Grid = ({ data = {} }) => {
-  const { size, columns } = data
+  const { size, accentImage, accentPosition, columns } = data
 
   const getGridSize = (
     breakpoint,
@@ -66,6 +66,20 @@ const Grid = ({ data = {} }) => {
             )
           })}
         </div>
+        {accentImage === 'true' && (
+        <>
+          {photos?.accentPhoto && (
+            <Photo
+              photo={photos.accentPhoto}
+              width={200}
+              srcSizes={[800, 1000, 1200, 1600]}
+              sizes="100vw"
+              layout="fill"
+              className={`accent--bg is-desktop ${accentPosition}`}
+            />
+          )}
+        </>
+      )}
       </div>
     </section>
   )

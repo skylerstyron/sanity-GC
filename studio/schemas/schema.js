@@ -3,6 +3,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // Document types
 import page from './documents/page'
+import post from './documents/post'
 import section from './documents/section'
 import product from './documents/shop-product'
 import productVariant from './documents/shop-variant'
@@ -71,6 +72,7 @@ export default createSchema({
     /* ----------------- */
     /* 1: Document types */
     page,
+    post,
     section,
     product,
     productVariant,
