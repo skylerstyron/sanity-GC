@@ -42,7 +42,7 @@
 
   &--name {
     @apply m-0 text-50 leading-135;
-    font-family: 'Rune', sans-serif !important;
+    font-family: 'Rune', sans-serif;
     font-weight: 700;
 
   }
