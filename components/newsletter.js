@@ -97,7 +97,7 @@ const Newsletter = ({ data = {} }) => {
             <div className="control--group is-inline is-clean">
               <div className={`control${errors?.email ? ' has-error' : ''}`}>
                 <label htmlFor={`email-${id}`} className="control--label">
-                  Email Address
+                  your email
                 </label>
                 <input
                   id={`email-${id}`}

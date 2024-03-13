@@ -65,7 +65,7 @@
 
   &--actions {
 
-    @apply sm:flex sticky bottom-0 mt-16 p-16 md:p-32 border-t bg-pageBG is-textured text-center;
+    @apply sm:flex sticky bottom-0 mt-16 p-16 md:p-32 text-center;
 
     .counter {
       @apply hidden sm:inline-flex mr-16;
@@ -85,7 +85,7 @@
   }
 
   &--values {
-    @apply flex flex-wrap justify-end ml-auto gap-x-8 gap-y-8;
+    @apply flex flex-wrap justify-center ml-auto gap-x-8 gap-y-8;
     grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
   }
 

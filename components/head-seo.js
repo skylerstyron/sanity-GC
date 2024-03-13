@@ -41,7 +41,6 @@ const HeadSEO = ({ site = {}, page = {}, schema }) => {
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="format-detection" content="telephone=no" />
-      <link rel="stylesheet" href="https://use.typekit.net/nep8kox.css" />
       <link rel="icon" href={siteFaviconLegacy} sizes="any" />
       <link preload="true" rel="icon" type="image/svg+xml" href={siteFavicon} />
       <link preload="true" rel="mask-icon" href={siteFavicon} color="#000000" />

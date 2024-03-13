@@ -26,7 +26,8 @@
   }
 
   p {
-    @apply m-0 text-16 leading-150;
+    @apply m-0 text-20 leading-150;
+    font-family: "lato", sans-serif;
   }
 
   strong {
@@ -196,7 +197,6 @@ h3,
 h4,
 .is-h4 {
   font-family: 'Rune', sans-serif !important;
-  /* font-style: italic; */
   font-weight: 700;
 
   &:not(:last-child) {
@@ -244,9 +244,18 @@ figure {
 
 /* Pages */
 
+.About h4, .About .is-h4 {
+  @apply text-34
+}
 /* Components */
+
+.collection .product-card--link {
+  font-size: 24px;
+}
+
 .hero h1,
-.hero h2 {
+.hero h2,
+.Shirts h1 {
   font-family: 'Rune', sans-serif;
   font-style: italic;
   font-weight: 700;

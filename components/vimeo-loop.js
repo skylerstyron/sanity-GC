@@ -27,7 +27,7 @@ const VideoLoop = ({
   useEffect(() => {
     if (iframePlayer) {
       if (inView) {
-        iframePlayer.play().catch(() => {})
+        iframePlayer.play().catch(() => { })
       } else {
         iframePlayer.pause()
       }
@@ -55,3 +55,5 @@ const VideoLoop = ({
 }
 
 export default VideoLoop
+
+

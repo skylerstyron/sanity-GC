@@ -209,9 +209,9 @@ const Collection = ({ data = {} }) => {
               showThumbs={
                 product.photos.listing && product.useGallery === 'false'
               }
-              showOption={product.surfaceOption}
+              // showOption={product.surfaceOption}
               showPrice
-              showQuickAdd
+              // showQuickAdd
             />
           ))}
 

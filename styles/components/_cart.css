@@ -1,5 +1,5 @@
 .cart {
-  @apply fixed top-0 right-0 w-full h-screen max-w-2xl z-9 bg-pageText text-pageBG invisible pointer-events-none;
+  @apply fixed top-0 right-0 w-full h-screen max-w-2xl z-9 bg-pageBG text-pageText invisible pointer-events-none;
   height: calc(var(--vh, 1vh) * 100);
   will-change: transform;
   transition: visibility .2s .8s;
