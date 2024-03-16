@@ -90,7 +90,7 @@ const Cart = ({ data }) => {
                 Your Cart <span className="cart--count">{cartCount}</span>
               </div>
               <button className="cart-toggle" onClick={() => toggleCart(false)}>
-                Done
+                Close
               </button>
             </div>
 
@@ -112,7 +112,7 @@ const Cart = ({ data }) => {
                 <a
                   href={checkoutLink}
                   onClick={(e) => goToCheckout(e)}
-                  className="btn is-primary is-inverted is-large is-block"
+                  className="btn is-inverted is-large is-block"
                 >
                   {isUpdating ? 'Updating...' : 'Checkout'}
                 </a>

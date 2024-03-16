@@ -3,7 +3,7 @@
   grid-template-columns: auto auto auto;
 
   &.is-inverted {
-    @apply bg-transparent text-pageBG;
+    @apply bg-transparent text-pageText;
   }
 
   &.is-small {

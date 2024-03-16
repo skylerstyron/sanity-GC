@@ -67,12 +67,12 @@ function CartItem({ item }) {
               id={item.id}
               defaultCount={item.quantity}
               onUpdate={changeQuantity}
-              className="is-small is-inverted"
+              className="is-small"
             />
           </div>
           <button
             onClick={() => removeItem(item.lineID)}
-            className="btn is-text"
+            className="btn"
           >
             Remove
           </button>
