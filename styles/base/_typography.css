@@ -7,6 +7,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Minera';
+  src: url('/fonts/Minera.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yeller';
+  src: url('/fonts/Yeller.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 @layer base {
   html {
@@ -42,15 +56,20 @@
   h1,
   .is-h1 {
     @apply m-0 text-48 font-normal leading-125;
+    font-family: obviously-narrow, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
   }
 
   h2,
   .is-h2 {
-    @apply m-0 text-36 font-normal leading-125;
-    font-family: "obviously-narrow", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    @apply m-0 text-28 font-normal leading-125;
+    font-family: obviously-narrow, sans-serif;
+    font-weight: 600;
+    /* font-style: italic; */
     font-display: swap;
+    text-transform: uppercase;
   }
 
   h3,
@@ -256,7 +275,8 @@ figure {
 .hero h1,
 .hero h2,
 .Shirts h1 {
-  font-family: 'Rune', sans-serif;
+  font-family: 'Minera', sans-serif;
   font-style: italic;
   font-weight: 700;
+  font-size: 3.5rem;
 }

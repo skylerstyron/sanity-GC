@@ -51,7 +51,7 @@ const HeadSEO = ({ site = {}, page = {}, schema }) => {
         />
       )}
 
-      <link rel="preconnect" href="https://hull-demo.myshopify.com" />
+      <link rel="preconnect" href="https://shop.gnarcrew.com" />
       <link rel="preconnect" href="https://cdn.sanity.io" crossOrigin="" />
 
       <title>{metaTitle}</title>

@@ -43,6 +43,7 @@ const Marquee = ({ data = {} }) => {
                       photo={item.photo}
                       hasPlaceholder={false}
                       forceLoad={inView}
+
                     />
                   </div>
                 )
