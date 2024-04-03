@@ -19,7 +19,13 @@ const Footer = ({ data = {} }) => {
               <Menu items={block.menu.items} className="menu-footer" />
             )}
 
-            {block.newsletter && <Newsletter data={block.newsletter} />}
+            {block.newsletter &&
+              <>
+              <div>
+                <p className="footer--join">Be the first to hear about drops and events.</p>
+              </div>
+              <Newsletter data={block.newsletter} />
+              </>}
 
             {block.social && (
               <div className="menu-social">
@@ -44,7 +50,7 @@ const Footer = ({ data = {} }) => {
                 <ThemeSwitch />
 
                 <div className="footer--disclaimer">
-                  <p>&copy; {new Date().getFullYear()}. All Rights Reserved.</p>
+                  <p>&copy; Gnar Crew {new Date().getFullYear()}. All Rights Reserved.</p>
                 </div>
               </div>
             )}

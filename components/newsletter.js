@@ -132,15 +132,15 @@ const Newsletter = ({ data = {} }) => {
                 type="submit"
                 className={cx('btn is-text', {
                   'is-loading': submitting,
-                  'is-disabled': terms && !hasAgreed,
+                  // 'is-disabled': terms && !hasAgreed,
                 })}
-                disabled={submitting || (terms && !hasAgreed)}
+                // disabled={submitting || (terms && !hasAgreed)}
               >
                 {submit ? submit : 'Send'}
               </button>
             </div>
 
-            {terms && (
+            {/* {terms && (
               <div className="control">
                 <input
                   id={`acceptTerms-${id}`}
@@ -156,7 +156,7 @@ const Newsletter = ({ data = {} }) => {
                   {terms && <BlockContent blocks={terms} />}
                 </label>
               </div>
-            )}
+            )} */}
           </m.div>
         )}
 

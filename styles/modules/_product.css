@@ -42,9 +42,9 @@
 
   &--name {
     @apply m-0 text-32 leading-135;
-    font-family: 'Yeller', sans-serif;
+    /* font-family: 'Yeller', sans-serif;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: uppercase; */
   }
 
   &--title {
