@@ -69,11 +69,11 @@
   
   &--item {
     @apply flex;
-    align-items: center;
+
   }
 
   &--text {
-    @apply block p-32 text-48 leading-100;
+    @apply block p-32 text-48 mb-16 leading-100;
   }
 
   &--photo {
@@ -100,6 +100,14 @@
 
     .product-card {
       @apply flex-1;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .marquee {
+    &--item {
+      align-items: center;
     }
   }
 }

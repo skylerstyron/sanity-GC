@@ -20,6 +20,7 @@ const hiddenDocTypes = listItem =>
     'promoSettings',
     'headerSettings',
     'footerSettings',
+    'popupSettings',
     'shopSettings',
     'seoSettings',
 

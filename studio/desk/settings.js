@@ -9,7 +9,8 @@ import {
   Cookie,
   FlagBanner,
   GlobeSimple,
-  Shuffle
+  Shuffle,
+  Envelope
 } from 'phosphor-react'
 
 export const settingsMenu = S.listItem()
@@ -61,6 +62,15 @@ export const settingsMenu = S.listItem()
               .documentId('footerSettings')
           )
           .icon(AnchorSimple),
+          S.listItem()
+          .title('Popup')
+          .child(
+            S.editor()
+              .id('popupSettings')
+              .schemaType('popupSettings')
+              .documentId('popupSettings')
+          )
+          .icon(Envelope),
         S.divider(),
         S.listItem()
           .title('Cookie Consent')

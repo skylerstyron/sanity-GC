@@ -16,6 +16,7 @@ import cookieSettings from './documents/settings-cookie'
 import promoSettings from './documents/settings-promo'
 import headerSettings from './documents/settings-header'
 import footerSettings from './documents/settings-footer'
+import popupSettings from './documents/settings-popup'
 import shopSettings from './documents/settings-shop'
 import seoSettings from './documents/settings-seo'
 import menu from './documents/menu'
@@ -85,6 +86,7 @@ export default createSchema({
     promoSettings,
     headerSettings,
     footerSettings,
+    popupSettings,
     shopSettings,
     seoSettings,
     menu,

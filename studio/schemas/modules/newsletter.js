@@ -17,6 +17,11 @@ export default {
       }
     },
     {
+      title: 'Sign Up Message',
+      name: 'signMsg',
+      type: 'complexPortableText'
+    },
+    {
       title: 'Klaviyo List ID',
       name: 'klaviyoListID',
       type: 'string',

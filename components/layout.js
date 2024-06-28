@@ -7,6 +7,7 @@ import { pageTransitionSpeed } from '@lib/animate'
 
 import HeadSEO from '@components/head-seo'
 import CookieBar from '@components/cookie-bar'
+import Popup from '@components/popup'
 import Header from '@components/header'
 import Footer from '@components/footer'
 
@@ -71,6 +72,7 @@ const Layout = ({ site = {}, page = {}, schema, children }) => {
         variants={pageTransitionAnim}
         style={headerHeight ? { '--headerHeight': `${headerHeight}px` } : null}
       >
+        <Popup />
         <CookieBar data={site.cookieConsent} />
         <Header
           data={site.header}

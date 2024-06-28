@@ -6,9 +6,9 @@ const HeadSEO = ({ site = {}, page = {}, schema }) => {
   // set <head> variables
   const siteTitle = site.title
 
-  const siteFavicon = site.seo?.favicon || '/favicon.svg'
+  const siteFavicon = site.seo?.favicon || '/favicon.ico'
   const siteFaviconLegacy = site.seo?.faviconLegacy || '/favicon.ico'
-  const siteTouchIcon = site.seo?.touchIcon
+  const siteTouchIcon = site.seo?.touchIcon || '/favicon.ico'
 
   const templateTags = [
     {
@@ -44,12 +44,7 @@ const HeadSEO = ({ site = {}, page = {}, schema }) => {
       <link rel="icon" href={siteFaviconLegacy} sizes="any" />
       <link preload="true" rel="icon" type="image/svg+xml" href={siteFavicon} />
       <link preload="true" rel="mask-icon" href={siteFavicon} color="#000000" />
-      {siteTouchIcon && (
-        <link
-          rel="apple-touch-icon"
-          href={imageBuilder.image(siteTouchIcon).width(192).height(192).url()}
-        />
-      )}
+      
 
       <link rel="preconnect" href="https://shop.gnarcrew.com" />
       <link rel="preconnect" href="https://cdn.sanity.io" crossOrigin="" />
@@ -103,6 +98,7 @@ const HeadSEO = ({ site = {}, page = {}, schema }) => {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       )}
+      
     </Head>
   )
 }

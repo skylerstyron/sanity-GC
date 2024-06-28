@@ -19,6 +19,8 @@
 @import 'components/_listboxes';
 @import 'components/_marquees';
 @import 'components/_cookie-bar';
+@import 'components/_popup';
+
 @import 'components/_promo-banner';
 @import 'components/_header';
 @import 'components/_mega-nav';
