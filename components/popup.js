@@ -41,8 +41,12 @@ const Popup = ({ isOpen, onClose, data = {} }) => {
 
               {blocks.map((block) => {
 
+                {block.newsletter &&
+                  <>
+                    <Newsletter data={block.newsletter} />
+                  </>
+                }
 
-                <Newsletter data={block.newsletter} />
 
 
               })}
