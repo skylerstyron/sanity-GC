@@ -20,7 +20,7 @@ const popupAnim = {
   },
 };
 
-const Popup = ({ isOpen, onClose, data }) => {
+const Popup = ({ isOpen, onClose, data = {} }) => {
   const { blocks } = data
   return (
     <AnimatePresence>
