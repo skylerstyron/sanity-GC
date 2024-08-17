@@ -2,6 +2,8 @@ import React from 'react';
 import { AnimatePresence, motion as m } from 'framer-motion';
 import Newsletter from '@components/newsletter';
 
+const { blocks } = data
+
 const popupAnim = {
   show: {
     y: '0%',
@@ -36,7 +38,15 @@ const Popup = ({ isOpen, onClose }) => {
             <div className="popup--message">
               <h3>Join the Cult</h3>
               <p>Become a member. Reap the rewards.</p>
-              <Newsletter data={block.newsletter} />
+
+              {blocks.map((block) => {
+
+
+                <Newsletter data={block.newsletter} />
+
+
+              })}
+
             </div>
             <button className="popup--close" onClick={onClose}>
               &times;
