@@ -136,7 +136,7 @@ const Newsletter = ({ data = {} }) => {
                 })}
                 // disabled={submitting || (terms && !hasAgreed)}
               >
-                {submit ? submit : 'Send'}
+                {submit ? submit : 'Send it'}
               </button>
             </div>
 

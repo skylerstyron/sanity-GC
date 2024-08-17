@@ -22,7 +22,7 @@ const Footer = ({ data = {} }) => {
             {block.newsletter &&
               <>
               <div>
-                <p className="footer--join">Be the first to hear about limited drops & special events.</p>
+                <p className="footer--join">Become a member. Reap the rewards.</p>
               </div>
               <Newsletter data={block.newsletter} />
               </>}

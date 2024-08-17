@@ -7,7 +7,6 @@ const popupAnim = {
     y: '0%',
     transition: {
       duration: 0.8,
-      delay: 5,
       ease: [0.16, 1, 0.3, 1],
     },
   },
@@ -35,8 +34,8 @@ const Popup = ({ isOpen, onClose }) => {
         >
           <div className="popup--content">
             <div className="popup--message">
-              <h3>Join the Crew</h3>
-              <p>Be the first to hear about limited drops & special events.</p>
+              <h3>Join the Cult</h3>
+              <p>Become a member. Reap the rewards.</p>
               <Newsletter />
             </div>
             <button className="popup--close" onClick={onClose}>

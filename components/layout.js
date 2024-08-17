@@ -72,7 +72,8 @@ const Layout = ({ site = {}, page = {}, schema, children }) => {
         variants={pageTransitionAnim}
         style={headerHeight ? { '--headerHeight': `${headerHeight}px` } : null}
       >
-        <Popup />
+        
+        
         <CookieBar data={site.cookieConsent} />
         <Header
           data={site.header}

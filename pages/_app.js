@@ -16,6 +16,7 @@ import {
 } from '@lib/context'
 
 import Cart from '@components/cart'
+import PopupManager from '@components/popup-manager'
 
 // Console Credits
 if (isBrowser) {
@@ -97,6 +98,7 @@ const Site = ({ Component, pageProps, router }) => {
       </AnimatePresence>
 
       <Cart data={{ ...data?.site }} />
+      <PopupManager />
     </LazyMotion>
   )
 }
