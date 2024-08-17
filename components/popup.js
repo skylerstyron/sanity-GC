@@ -36,7 +36,7 @@ const Popup = ({ isOpen, onClose }) => {
             <div className="popup--message">
               <h3>Join the Cult</h3>
               <p>Become a member. Reap the rewards.</p>
-              <Newsletter />
+              <Newsletter data={block.newsletter} />
             </div>
             <button className="popup--close" onClick={onClose}>
               &times;
