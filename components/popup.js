@@ -2,7 +2,6 @@ import React from 'react';
 import { AnimatePresence, motion as m } from 'framer-motion';
 import Newsletter from '@components/newsletter';
 
-const { blocks } = data
 
 const popupAnim = {
   show: {
@@ -21,7 +20,8 @@ const popupAnim = {
   },
 };
 
-const Popup = ({ isOpen, onClose }) => {
+const Popup = ({ isOpen, onClose, data }) => {
+  const { blocks } = data
   return (
     <AnimatePresence>
       {isOpen && (
