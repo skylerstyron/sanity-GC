@@ -98,7 +98,7 @@ const Site = ({ Component, pageProps, router }) => {
       </AnimatePresence>
 
       <Cart data={{ ...data?.site }} />
-      <PopupManager />
+      {/* <PopupManager /> */}
     </LazyMotion>
   )
 }
