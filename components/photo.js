@@ -12,7 +12,7 @@ const Photo = ({
   sizes = '(min-width: 940px) 50vw, 100vw',
   layout = 'intrinsic',
   quality = 80,
-  // hasPlaceholder = true,
+  hasPlaceholder = true,
   forceLoad,
   onLoad,
   className,
@@ -83,11 +83,11 @@ const Photo = ({
           />
         </picture>
 
-        {/* {hasPlaceholder && (
+        {hasPlaceholder && (
           <div className={cx('ar--placeholder', { 'is-loaded': isLoaded })}>
             <img src={photo.lqip} alt="" role="presentation" loading="lazy" />
           </div>
-        )} */}
+        )}
       </div>
     </figure>
   )

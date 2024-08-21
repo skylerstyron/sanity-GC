@@ -98,7 +98,7 @@
 
   .collection &,
   .marquee & {
-    @apply p-25 m-[-0.5px];
+    @apply py-25 px-10 md:px-15 ;
   }
 
   &.is-inline {
