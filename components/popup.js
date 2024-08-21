@@ -2,7 +2,6 @@ import React from 'react';
 import { AnimatePresence, motion as m } from 'framer-motion';
 import Newsletter from '@components/newsletter';
 
-
 const popupAnim = {
   show: {
     y: '0%',
@@ -20,8 +19,7 @@ const popupAnim = {
   },
 };
 
-const Popup = ({ isOpen, onClose, data = {} }) => {
-  const { blocks = [] } = data
+const Popup = ({ isOpen, onClose }) => {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -38,19 +36,7 @@ const Popup = ({ isOpen, onClose, data = {} }) => {
             <div className="popup--message">
               <h3>Join the Cult</h3>
               <p>Become a member. Reap the rewards.</p>
-
-              {blocks.map((block) => {
-
-                {block.newsletter &&
-                  <>
-                    <Newsletter data={block.newsletter} />
-                  </>
-                }
-
-
-
-              })}
-
+              <Newsletter />
             </div>
             <button className="popup--close" onClick={onClose}>
               &times;
