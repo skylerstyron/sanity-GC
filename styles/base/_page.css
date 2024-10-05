@@ -11,7 +11,7 @@ body {
 }
 
 .section {
-  @apply relative px-16 py-48 sm:p-32 md:py-64 lg:py-80 border-b;
+  @apply relative px-16 pb-48 sm:p-32 md:pb-64 lg:pb-80 border-b;
 
   &--content {
     @apply mx-auto;

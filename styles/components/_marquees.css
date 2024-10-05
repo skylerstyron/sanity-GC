@@ -111,3 +111,9 @@
     }
   }
 }
+
+
+
+.Home > .marquee-section .marquee {
+  border-bottom: none;
+}

@@ -31,6 +31,16 @@
   }
 }
 
+.hero.hero--video {
+  height: 70vh; 
+  min-height: 40vh;
+  border-bottom: none;
+}
+
 .Shop > .hero, .About > .hero {
   min-height: 20vh;
+}
+
+.Home > .hero {
+  min-height: 70vh;
 }
